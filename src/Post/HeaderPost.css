@@ -1,0 +1,32 @@
+.headerPost {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c2f33;
+  color: #fafafa;
+}
+
+.headerPost__border {
+  border-radius: 360px;
+  padding: 3px;
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}
+
+.headerPost > p {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.headerPost__avatar {
+  border: 2px solid white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
