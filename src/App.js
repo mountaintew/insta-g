@@ -3,22 +3,60 @@ import Header from './Header';
 import Stories from './Stories';
 import Feed from './Feed';
 import Footer from './Footer';
+import Login from './Account/Login'
+import { useState } from 'react';
+import { createTheme, ThemeProvider } from '@material-ui/core'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+const theme = createTheme({
+  primary: {
+    main: '#ec407a',
+  },
+})
+
+
+
 function App() {
+  const [login, setLogin] = useState(false)
+
   return (
-    <div className="App">
-      {/* Header */}
-      <Header />
+    <Router>
+      <Switch>
+        <Route path="/feed">
+          <Header />
+          <Stories />
+          <Feed />
+          <Footer />
+        </Route>
 
-      {/* Stories */}
-      <Stories />
-      {/* Feed */}
-      <Feed />
+        <Route path="/login">
+          <Login />
+        </Route>
+
+      </Switch>
+    </Router>
+
+    // <div className="App">
+
+    //   {login &&
+    //     <div>
+    //       <Header />
+    //       <Stories />
+    //       <Feed />
+    //       <Footer />
+    //     </div>
+    //   }
+
+    //   {!login &&
+    //     <Login />
+    //   }
 
 
-
-      {/* Footer */}
-      <Footer />
-    </div>
+    // </div>
   );
 }
 

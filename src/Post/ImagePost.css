@@ -1,9 +1,9 @@
 .imagepost{
     display: flex;
     flex-direction: row;
-    min-width: 100vw;
+    min-width: 100%;
 }                  
 .imagepost > img{
-    object-fit: cover;
-    width: 100vw;
+    object-fit: contain;
+    width: 100%;
 }

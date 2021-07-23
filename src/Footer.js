@@ -9,19 +9,19 @@ import { IconButton } from '@material-ui/core';
 function Footer() {
     return (
         <div className="footer">
-           <IconButton className="active" size='large'>
+           <IconButton>
                <HomeRoundedIcon />
            </IconButton>
-           <IconButton size='large'>
+           <IconButton>
                <SearchRoundedIcon/>
            </IconButton>
-           <IconButton size='large'>
+           <IconButton>
                <AddBoxRoundedIcon/>
            </IconButton>
-           <IconButton size='large'>
+           <IconButton >
                <FavoriteRoundedIcon/>
            </IconButton>
-           <IconButton size='large'>
+           <IconButton>
                <AccountCircleRoundedIcon/>
            </IconButton>
         </div>

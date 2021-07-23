@@ -1,6 +1,5 @@
 .stories {
   display: flex;
-  overflow: hidden;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  
   padding-top: 80px;
   background-color: #2c2f33;
@@ -34,10 +33,31 @@
   flex-direction: row;
   overflow-x: scroll;
   width: 100vw;
+  
 }
+
+/* width */
 .stories__list::-webkit-scrollbar {
-  display: none;
+  height: 6px;
 }
+
+/* Track */
+.stories__list::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0); 
+}
+
+ 
+/* Handle */
+.stories__list::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0); 
+}
+
+/* Handle on hover */
+.stories__list::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 1); 
+}
+
+
 .stories__story {
   display: flex;
   align-items: center;

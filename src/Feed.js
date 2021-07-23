@@ -32,6 +32,7 @@ function Feed() {
 
     return (
         <div className="feed">
+            
             {feed && feed.map((post) => (
                 <div className="post" key={post.img_post + post.user}>
                     {/* Header Post */}

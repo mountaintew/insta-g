@@ -10,11 +10,9 @@
 
 body {
   font-family: "NBSR";
+  background-color: "#23272a";
 }
 
-.content {
-  overflow: hidden;
-}
 
 * > .MuiSvgIcon-root {
   color: #99aab5;
@@ -30,3 +28,5 @@ body {
 * > .MuiSvgIcon-root:hover {
   filter: brightness(0) invert(1) drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
 }
+
+

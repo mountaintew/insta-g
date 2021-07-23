@@ -1,7 +1,7 @@
 .footerpost {
   display: flex;
   flex-direction: column;
-  width: 100vw !important;
+  width: 100% !important;
   margin-bottom: 15px;
   background-color: #2c2f33;
   color: #fafafa;
@@ -10,7 +10,7 @@
 .footerpost__actions {
   display: flex;
   flex-direction: row;
-  width: 100vw !important;
+  width: 100% !important;
 }
 .footerpost__actions__common {
   flex: 1;
@@ -33,6 +33,7 @@
   font-weight: lighter;
   font-size: 0.9rem;
   margin-left: 10px;
+  margin-right: 10px;
 }
 
 .footerpost__data__comments {
